@@ -1,7 +1,7 @@
 ﻿Add-Type –AssemblyName UIAutomationClient
 Add-Type –AssemblyName UIAutomationTypes
 add-type -AssemblyName System.Windows.Forms
-$npcap = [Diagnostics.Process]::Start("C:\Users\shammer\Downloads\npcap-1.55.exe")
+$npcap = [Diagnostics.Process]::Start("C:\Users\username\Downloads\npcap-1.55.exe")
 # wait for the UI to appear
 $null = $npcap.WaitForInputIdle(5000)
 sleep –s 3
